@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home import views
-
+from quoteapp import views as qa
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/',views.display),
-    path('date/',views.displayDateTime)
+    path('date/',views.displayDateTime),
+    path("quote/",qa.displayquote)
 ]
