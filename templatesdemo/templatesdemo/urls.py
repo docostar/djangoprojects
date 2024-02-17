@@ -20,5 +20,6 @@ from Home import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.renderfirst)
+    path("",views.renderfirst),
+    path("emp",views.renderEmployee)
 ]
