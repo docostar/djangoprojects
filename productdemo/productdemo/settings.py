@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-xdy_hi)q(cf!yulyjmvc2*1^walxaqgr&4=wn9xsx+s5&a6*)6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-docostar-djangoprojects-jzk2u2oudf3.ws-us108.gitpod.io']
+ALLOWED_HOSTS = ['8000-docostar-djangoprojects-jzk2u2oudf3.ws-us108.gitpod.io',
+                'localhost'
+    ]
 
 
 # Application definition
