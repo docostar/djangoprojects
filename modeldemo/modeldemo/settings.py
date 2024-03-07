@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'modeldemo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'defaultdb',
-        'USER':'avnadmin',
-        'PASSWORD':'AVNS_gyCfYXxKUYMadz6XrYY',
-        'HOST':'pg-25f7842d-dholariyarahul-25d2.a.aivencloud.com',
-        'PORT':'29817'
+        'NAME':'',
+        'USER':'',
+        'PASSWORD':'',
+        'HOST':'',
+        'PORT':''
     }
 }
 
