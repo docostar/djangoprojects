@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-docostar-djangoprojects-jzk2u2oudf3.ws-us108.gitpod.io']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-docostar-djangoprojects-jzk2u2oudf3.ws-us108.gitpod.io'
+]
+
 
 # Application definition
 
@@ -80,11 +84,11 @@ WSGI_APPLICATION = 'modeldemo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'',
-        'USER':'',
+        'NAME':'defaultdb',
+        'USER':'avnadmin',
         'PASSWORD':'',
-        'HOST':'',
-        'PORT':''
+        'HOST':'pg-25f7842d-dholariyarahul-25d2.a.aivencloud.com',
+        'PORT':'29817'
     }
 }
 
