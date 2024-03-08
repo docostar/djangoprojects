@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <title>Employee Information</title>
+    
+    </head>
+    <body>
+        <h2>Jai Bharat</h2>
+        <h1>Employee List</h1>
+        {% if employees %}
+            <table>
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Salary</th>
+                    <th>Email</th>
+                </thead>
+            {% for emp in employees %}
+                <tr>
+                    <td> {{emp.firstName}} </td>
+                    <td> {{emp.lastName}} </td>
+                    <td> {{emp.salry}} </td>
+                    <td> {{emp.email}} </td>
+                </tr>
+            {% endfor %}
+            </table>
+        {% else %}
+            <p> No Data Found </p>
+        {% endif %}
+    </body>
+</html>
+
+
