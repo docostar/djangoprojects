@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Student Information</title>
+    </head>
+    <body>
+        <h1>Students:</h1>
+        {% if students %}
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Test Score</th>
+                </thead>
+                {% for student in students %}
+                    <tr>
+                        <td>{{student.id}}</td>
+                        <td>{{student.firstName}}</td>
+                        <td>{{student.lastName}}</td>
+                        <td>{{student.testScore}}</td>
+                        <td><a href='delete/{{student.id}}'>Delete</a></td>
+                        <td><a href='update/{{student.id}}'>Update</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+        <h2>No students</h2>
+        {% endif %}
+        <br/><br/><br/>
+        <a href="/create">Cretae Student</a>
+    </body>
+</html>
