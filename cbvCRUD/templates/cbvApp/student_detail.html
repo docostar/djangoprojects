@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Student Detail Information</title>
+    </head>
+    <body>
+        <h1>Student Details:</h1>
+        <ol>
+            <h3><li>First Name: {{ student.firstName}}</li></h3>
+            <li>Last Name: {{ student.lastName}}</li>
+            <li>Test Score: {{ student.testScore}}</li>
+            <li><a href='/delete/{{student.id}}'>Delete</a></li>
+            <li><a href='/update/{{student.id}}'>Update</a></li>
+        </ol>
+    </body>
+</html>
