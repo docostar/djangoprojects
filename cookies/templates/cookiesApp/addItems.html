@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Welcome to Shoping Cart</title>
+    </head>
+    <body>
+        <h2>Shopping Cart Add Items</h2>
+        <form method='POST'>
+            {{form.as_p}}
+            <input type='submit' value='ADD'>
+            <a href='/displayItems'> Diplay Cart</a>
+            {% csrf_token %}
+        </form>
+    </body>
+</html>
+

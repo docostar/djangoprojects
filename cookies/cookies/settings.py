@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-docostar-djangoprojects-jzk2u2oudf3.ws-us110.gitpod.io']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-docostar-djangoprojects-jzk2u2oudf3.ws-us110.gitpod.io']
+
 
 # Application definition
 

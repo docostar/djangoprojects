@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Display Cart Cart</title>
+    </head>
+    <body>
+        {% if request.COOKIES %}
+            <h2>Items in the cart</h2>
+            <table>
+                <thead>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                </thead>
+                <tbody>
+                    {% for key,value in request.COOKIES.items %}
+                    <tr>
+                        <td>{{key}}</td>
+                        <td>{{value}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <b>No Items in Shopping List</b>
+        {% endif %}
+    </body>
+</html>
+

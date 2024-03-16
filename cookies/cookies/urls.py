@@ -23,4 +23,7 @@ urlpatterns = [
     path('home/', views.home),
     path('page2/', views.page2),
     path('count/', views.countview),
+    path('', views.index),
+    path('addItem/', views.addItem),
+    path('displayItems/', views.displayCart),
 ]
