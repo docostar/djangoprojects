@@ -13,6 +13,7 @@ def pageCount(request):
 def index(request):
     #request.session_set_expiry(180)
     #del request.session['count']
+    raise Exception('Something terrible happen.')
     return render(request,'sessionApp/index.html')
 
 def addItem(request):
